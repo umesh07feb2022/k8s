@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myonlinestore-svc
+  name: myjava-svc
   labels:
-    app: myonlinestore
+    app: myjava
     version: 2.6.1
 spec:
   type: NodePort
   ports:
   - port: 8080
-    nodePort: 30001
+    nodePort: 30002
     protocol: TCP
   selector:
-    app: myonlinestore
+    app: myjava
     version: 2.6.1

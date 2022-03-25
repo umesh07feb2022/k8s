@@ -8,7 +8,7 @@ spec:
    type: NodePort
    ports:
    - port: 80
-     Nodeport: 30001
+     nodeport: 3000
      protocol: TCP
    selector:
      app: mynginx

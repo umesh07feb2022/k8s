@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: mynginx myapp
+    app: mynginx 
   template:
     metadata:
       labels:

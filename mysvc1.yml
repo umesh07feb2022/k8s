@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myjava-svc
+  name: mahaonlinestore-svc
   labels:
-    app: myjava
+    app: mahaonlinestore
     version: 2.6.1
 spec:
   type: NodePort
@@ -12,5 +12,5 @@ spec:
     nodePort: 30002
     protocol: TCP
   selector:
-    app: myjava
+    app: mahaonlinestore
     version: 2.6.1

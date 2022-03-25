@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myjava-rc
+  name:mahaonlinestore-rc
 spec:
   replicas: 2
   selector:
-    app: myjava
+    app: mahaonlinestore
     version: 2.6.1
   template:
     metadata:
       labels:
-        app: myjava
+        app: mahaonlinestore
         version: 2.6.1
     spec:
       containers:
         - name: myjava-container
-          image: umesh214/myjava:1
+          image: maha4iac/mahaonlinestore:1
           ports:
             - containerPort: 8080

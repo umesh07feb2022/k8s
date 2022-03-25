@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     app: myjava
-    version: 2.6.2
+    version: 2.6.1
   template:
     metadata:
       labels:
         app: myjava
-        version: 2.6.2
+        version: 2.6.1
     spec:
       containers:
         - name: myjava-container
-          image: umesh214/myjava:2
+          image: umesh214/myjava:1
           ports:
             - containerPort: 8080

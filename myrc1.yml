@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     app: mahaonlinestore
-    version: 2.6.2
+    version: 2.6.1
   template:
     metadata:
       labels:
         app: mahaonlinestore
-        version: 2.6.2
+        version: 2.6.1
     spec:
       containers:
         - name: myjava-container
-          image: maha4iac/mahaonlinestore:2
+          image: maha4iac/mahaonlinestore:1
           ports:
             - containerPort: 8080
